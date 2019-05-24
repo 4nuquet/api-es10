@@ -1,0 +1,25 @@
+{
+    "name": "api-es10",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel backend --out-dir dist",
+        "start": "node dist/index.js ",
+        "dev": "nodemon backend/index.js --exec babel-node"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/polyfill": "^7.4.4",
+        "express": "^4.17.0",
+        "mongodb": "^3.2.6"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.5",
+        "@babel/node": "^7.4.5",
+        "@babel/preset-env": "^7.4.5"
+    }
+}
